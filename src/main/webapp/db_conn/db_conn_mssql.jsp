@@ -6,7 +6,7 @@
     <%
         Connection conn = null;
         String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-        String url = "jdbc:sqlserver://localhost:1433;DatabaseName=myDB; encrypt=false";
+        String url = "jdbc:sqlserver://localhost:1433;DatabaseName=myDB;encrypt=false";
         
         //예외(Error) 처리: 
         try{//try 블럭에서 오류가 발생하더라도 프로그램이 멈추지 않도록
