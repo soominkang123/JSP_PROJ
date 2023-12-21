@@ -8,10 +8,10 @@
   <%
      // DB에서 가져온 레코드셋을 rs 에 담은후 ArrayList 에 저장 후 출력
      // 선언만 된 상태
-     ArrayList name = new ArrayList();      // 이름
-     ArrayList email = new ArrayList();     // 메일
-     ArrayList subject = new ArrayList();   // 제목
-     ArrayList content = new ArrayList();   // 내용
+     ArrayList<String> name = new ArrayList();              // 이름  String 생략 가능
+     ArrayList<String> email = new ArrayList();             // 메일
+     ArrayList<String> subject = new ArrayList();           // 제목
+     ArrayList<String> content = new ArrayList();           // 내용
   
      //객체 변수 선언
      String sql = null ;
@@ -29,7 +29,7 @@
            rs = pstmt.executeQuery();
      
      }catch (Exception e) {
-    	 out.println ("DB에 값을 읽어오는 동안ㄴ 오류가 발생 되었습니다.");
+    	 out.println ("DB에 값을 읽어오는 동안 오류가 발생 되었습니다.");
     	 e.printStackTrace();
      }
      
